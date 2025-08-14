@@ -1,8 +1,8 @@
 # Q-Norm
 [ICCV'25] Q-Norm
-# Getting Started
+## Getting Started
 
-## (1) Get image quality feature
+### (1) Get image quality feature
 
 Refer to the official documentation of CONTRIQUE [here](https://github.com/pavancm/CONTRIQUE) and download the weights
 
@@ -24,7 +24,7 @@ _, _, _, _, model_feat, model_feat_2, _, _ = quality_model(x, image_2)  # model_
 quality = torch.hstack((model_feat, model_feat_2))  # quality:2,4096
 ```
 
-## (2) Integrate Q-Norm into the model
+### (2) Integrate Q-Norm into the model
 
 ```
 from qnorm import QualityNorm
